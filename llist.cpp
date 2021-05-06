@@ -55,7 +55,7 @@ namespace md_llist
     template <class T>
     T LList<T>::remove_node(LLNode <T> *&node) {
         LLNode<T> *to_delete = node;
-        T data = to_delete->data;
+        T delete_data = to_delete->data;
         if(head == tail){
             delete to_delete;
             head = nullptr;
@@ -78,7 +78,7 @@ namespace md_llist
             delete to_delete;
             --element_count;
         }
-        return data;
+        return delete_data;
     }
 
     template <class T>
@@ -119,13 +119,19 @@ namespace md_llist
     template <class T>
     T LList<T>::pop_front() {
         if (!empty()){ return remove_node(head);}
-        else {cout << "Empty List.";}
+        else {
+            cout << "Empty List.";
+            exit(1);
+        }
     }
 
     template <class T>
     T LList<T>::pop_back() {
         if (!empty()){ return remove_node(tail);}
-        else {cout << "Empty List.";}
+        else {
+            cout << "Empty List.";
+            exit(1);
+        }
     }
 
     template <class T>
