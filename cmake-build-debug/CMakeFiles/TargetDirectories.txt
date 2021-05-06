@@ -1,0 +1,3 @@
+/Users/mdrozdov/CLionProjects/pascal-symbol-checker/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/mdrozdov/CLionProjects/pascal-symbol-checker/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/mdrozdov/CLionProjects/pascal-symbol-checker/cmake-build-debug/CMakeFiles/pascal_symbol_checker.dir
